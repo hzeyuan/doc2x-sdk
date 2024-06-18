@@ -18,6 +18,8 @@ const doc2x = new Doc2x({
   key: 'your key',
 });
 
+await doc2x.init();
+
 // 获取token
 const token = await doc2x.token;
 // 获取refreshToken

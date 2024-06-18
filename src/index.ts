@@ -60,7 +60,7 @@ export class DOC2X {
   _refreshToken: string;
 
   constructor({
-    baseUrl = process.env.DOC2X_BASE_URL,
+    baseUrl = process.env.DOC2X_BASE_URL || 'https://api.doc2x.noedgeai.com',
     key = process.env.DOC2X_KEY,
   }: Doc2xConfig) {
     if (!baseUrl) {
